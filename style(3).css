@@ -1,0 +1,909 @@
+.disabled {
+    color: gray;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 容器样式 */
+.container {
+    /*width: 80%;*/
+    margin: 0 auto;
+
+}
+
+/* 商品列表样式 */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.product-item {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-item h2 {
+    margin-top: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.product-item button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #3e8e41;
+}
+
+/* 数量选择器样式 */
+.quantity-selector {
+    display: flex;
+    margin-top: 200px;
+    /*top:200px;*/
+    align-items: center;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 27px;
+    /*top:200px;*/
+    /*margin: 0 10px;*/
+}
+
+
+/*基础样式*/
+/* 样式文件，用于定义网页的布局和样式 */
+.container {
+    position: relative;
+    display: flex;
+    /*height: 100vh;*/
+    margin-top: 0px;
+    width: 100%;
+    height: 120%;
+
+}
+
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 9999;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    /*margin-top: 2px;*/
+}
+
+nav a {
+    display: block;
+    top:100px;
+    margin-top: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10%;
+    width: 90px;
+    z-index: 9999;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    z-index: 9999;
+}
+
+nav ul.categropies {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 100px;
+    margin: 3px;
+    font-size: 11px;
+    top:-10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 100000;
+}
+
+nav li:hover > ul.categropies {
+    display: block;
+  border-radius: 10px 10px 10px 10px;
+    z-index: 100000;
+
+}
+
+nav ul.categropies li {
+    display: block;
+    width: 170px;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 9999;
+
+}
+
+nav ul.categropies li a {
+    /*position: relative;*/
+    display: block;
+    padding: 3px 3px;
+    width: 150px;
+
+    color: #666;
+    z-index: 9999;
+    transform: scale(1); /* 将元素的大小放大 1.2 倍 */
+}
+
+nav ul.categropies li a:hover {
+    background-color: #f9f9f9;
+    width: 140px;
+    transform: scale(1.1); /* 将元素的大小放大 1.2 倍 */
+    z-index: 9999;
+
+}
+
+.side-menu {
+    /*margin-top: 200px;*/
+    background-image: linear-gradient(to left, #fdcbf1, #e6dee9);
+    flex-basis: 13%;
+    width: 20px;
+    /*background-color: #ffffff;*/
+    padding: 16px;
+}
+
+.main-content {
+    margin-top: 89px; /* 设置 main-content 与头部的间距 */
+    margin-left: 150px;
+    flex-basis: 80%;
+    padding: 16px;
+}
+
+
+.header {
+    position: fixed;
+    width: 98%;
+    margin-left: 0px;
+    top: 0;
+    left: 0px;
+    margin-top: 0px;
+    background-image: linear-gradient(to left, #fdcbf1, #e6dee9);
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 65px;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 998; /* 设置头部的层级高于main-content */
+    border-bottom: 2px solid #e0e0e0;
+}
+
+
+/*.header {*/
+/*    position: fixed;*/
+/*    width: 98%;*/
+/*    top: 0;*/
+/*    margin-top: 0px;*/
+/*    background-image: linear-gradient(to left,#fdcbf1, #e6dee9);*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    height: 80px;*/
+/*    background-color: #ffffff;*/
+/*    padding: 16px;*/
+/*}*/
+
+.header1 {
+    flex-basis: 50%;
+}
+
+.header-right {
+    flex-basis: 10%;
+    text-align: left;
+}
+
+.logo {
+    /*margin: 0px;*/
+    font-size: 45px;
+    /*left: -10px;*/
+    font-family: "Arial Black", sans-serif;
+    /*right: 30px;*/
+    /*margin-right: 100px;*/
+    /*width: 200px;*/
+    text-align: left;
+    float: left;
+}
+
+
+.search-form {
+    display: inline-block;
+    border: 1px;
+    color: #dcd2d2;
+}
+
+.price-form {
+    border: 1px;
+    border: 1px;
+    color: #dcd2d2;
+}
+
+
+.price-form label {
+    padding: 10px;
+    border: 1px;
+    border-radius: 0 4px 4px 0;
+    background-color: #f0f0f0;
+
+    color: #181818;
+    cursor: pointer;
+}
+
+/*.price-form*/
+
+/*.search-form input[type="text"] {*/
+/*    padding: 10px;*/
+/*    border: none;*/
+/*    border-radius: 8px 4px 4px 8px;*/
+/*    background-color: #eed0e6;*/
+
+/*    !*color: #dcd2d2;*!*/
+/*}*/
+
+.search-form button {
+    padding: 10px;
+    border: 1px;
+    border-radius: 0 4px 4px 0;
+
+    /*background-color: #71e560;*/
+
+    color: #181818;
+    cursor: pointer;
+}
+
+/*.icon {*/
+/*    position: absolute; !* 使用固定定位，相对于浏览器窗口固定位置 *!*/
+/*    bottom: 0; !* 设置距离页面底部的距离，可以根据需要进行调整 *!*/
+/*    right: 0; !* 设置距离页面右侧的距离，可以根据需要进行调整 *!*/
+/*    !*right: 1000px;*!*/
+/*    margin: 20px; !* 设置购物车图标与页面边缘的距离，可以根据需要进行调整 *!*/
+/*    border-radius: 50%;*/
+/*    !* 可选，设置图标的初始位置 *!*/
+/*    height: 40px;*/
+/*    width: 40px;*/
+/*    !*top: 100;*!*/
+/*    !*left: 0;*!*/
+/*    cursor: pointer; !* 添加指针样式，以表明可以点击 *!*/
+/*    !*transform: translate(-500%, -500%); !* 设置图标的初始位置为中心 *!*!*/
+/*    z-index: 999; !* 设置头部的层级高于main-content *!*/
+/*}*/
+
+
+.icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #000; /* 设置图标的背景颜色，可以根据需要进行调整 */
+    z-index: 999;
+}
+
+
+/* 购物车的动画效果 */
+.icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.goods-box {
+    width: 295px;
+    height: 400px;
+    background-color: #f8f8f8;
+    /*margin-top: px;*/
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    border-color: #b664a4;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*border-: 1px;*/
+}
+
+
+.goods-box img {
+    width: 250px;
+    height: 130px;
+}
+
+.goods-name {
+    font-size: 27px;
+    color: #333;
+    width: 270px;
+    font-weight: bolder;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 1px 1px #b7b5b5; /* Add a subtle text shadow */
+    /*background-color: #3e8e41;*/
+}
+
+.goods-box button {
+    /*position: relative;*/
+margin-left: 33px;
+    /*top:8px;*/
+    left: 30%;
+    width: 26px;
+    height: 26px;
+    border-color: #e8addb;
+    border-radius: 50%;
+    background-color: #e8addb;
+    background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);
+    /*z-index: 100;*/
+}
+
+.goods-box button.addcart{
+    margin-top: 8px;
+    background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);
+    width: 164px;
+    border-radius: 10px 10px 10px 10px;
+    /*z-index: 100;*/
+}
+
+
+
+.goods-detail {
+    /*background-color: #4CAF50;*/
+    margin-bottom: -30px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+.goods-price {
+    /*font-size: small;*/
+    font-size: 10px;
+    text-align: left; /* Align the text to the right */
+
+    font-weight: bold; /* Set the font weight to bold */
+    text-shadow: 1px 1px 1px #ddd; /* Add a subtle text shadow */
+
+
+    /*border: 1px solid #ddd; !* Add a border with a color of #ddd and a width of 1px *!*/
+    border-radius: 4px; /* Add a border radius of 4px for rounded corners */
+    transition: all 0.3s ease; /* Add a smooth transition effect for hover states */
+    /*border-: 1px;*/
+}
+
+
+.goods-price:hover {
+    background-color: #eee; /* Change the background color on hover */
+    color: #333; /* Change the text color on hover */
+    transform: scale(1.05); /* Apply a slight scale effect on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+.goods-quantity {
+    font-size: 10px;
+}
+
+
+
+.goods-name:hover {
+    background-color: #eee; /* Change the background color on hover */
+    color: #333; /* Change the text color on hover */
+    transform: scale(3); /* Apply a slight scale effect on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.goods-quantity:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add a box shadow on focus */
+}
+
+
+/* 方块内的文字样式 */
+.goods-box p {
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 侧边栏菜单样式 */
+#sidebar {
+    border-radius: 8px 4px 4px 8px;
+    margin-top: 75px;
+    left: 0px;
+    position: fixed;
+    width: 150px;
+    height: 120%;
+    background-color: #f8eeee;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    border-right: 2px solid #e0e0e0;
+}
+
+/*!* 一级分类样式 *!*/
+/*.category-level-1 {*/
+/*    !*cursor: pointer;*!*/
+/*    font-size: medium;*/
+/*    flood-color: #e8addb;*/
+/*}*/
+
+.sidebar .top-level-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .category {
+    cursor: pointer;
+}
+
+.sidebar .subcategories {
+    display: none; /* 隐藏二级分类 */
+}
+
+.sidebar .subcategory {
+    cursor: pointer;
+    /* 添加二级分类的样式，例如背景色、边距、字体等 */
+}
+
+
+/*!* 二级分类样式 *!*/
+/*.category-level-2 {*/
+/*    display: none;*/
+/*    cursor: pointer;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.container ul*/
+/*{*/
+/*    left: 10px;*/
+/*}*/
+
+
+/*!* 二级分类展开样式 *!*/
+/*.category-level-2.expanded {*/
+/*    display: block;*/
+/*}*/
+
+/*!* 当前选中的分类样式 *!*/
+/*.selected {*/
+/*    color: #ff0000;*/
+/*}*/
+
+/*.logo {*/
+/*    display: flex; !* 设置弹性布局 *!*/
+/*    align-items: center; !* 设置子元素垂直居中对齐 *!*/
+/*}*/
+
+.logo img {
+    width: 65px; /* 设置图片宽度 */
+    height: 65px;
+    border-radius: 50%;
+
+    margin-right: 20px; /* 设置右边距 */
+}
+
+.logo-h1 {
+    /*width: 65px; !* 设置图片宽度 *!*/
+    /*height: 65px;*/
+    border-radius: 50%;
+
+    /*margin-right: 10px; !* 设置右边距 *!*/
+}
+
+
+/* 设置 ul 标签为水平显示，并去除默认的样式 */
+.ul1 {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    /*margin: 0;*/
+    /*font-size: 333px;*/
+    margin-left: 300px;
+  left: 300px;
+    float:right;
+}
+
+/* 设置 li 标签的间距和对齐方式 */
+.ul1 li {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+    background-color: #fabfec;
+    border-radius: 20px 20px 20px 20px;
+    width: 70px;
+    position: center;
+    /*border-top: 2px solid #e0e0e0;*/
+    /*border-right: 2px solid #e0e0e0;*/
+    /*border-left: 2px solid #e0e0e0;*/
+    /*border-bottom: 2px solid #e0e0e0;*/
+    box-shadow: #b664a4;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /*height: 30px;*/
+    /*margin-right: 10px; !* 设置 li 之间的间距，可以根据需要进行调整 *!*/
+    /*    text-align: center; !* 设置 li 内容居中显示 *!*/
+    /*}*/
+    /* 设置 a 标签的样式 */
+}
+
+.ul1 li a {
+    display: flex; /* 设置 a 标签为块级元素，以占据整个 li 区域 */
+    padding: 10px; /* 设置 a 标签的内边距，可以根据需要进行调整 */
+    text-decoration: none; /* 去除链接的下划线样式 */
+    color: #000; /* 设置链接的颜色，可以根据需要进行调整 */
+    text-align: center;
+    /*float:right;*/
+    justify-content: center;
+
+}
+
+/* 设置鼠标悬停时的样式 */
+.ul1 li a:hover {
+    background-color: #eee; /* 设置鼠标悬停时的背景颜色，可以根据需要进行调整 */
+}
+
+/* 设置弹窗样式 */
+.modal-content {
+    border-radius: 10px 10px 10px 10px;
+    opacity: 10;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    padding: 2em;
+    pointer-events: all;
+    overflow: auto;
+    /*opacity: 0.5;*/
+    font-family: Monaco, monospace;
+    background-color: #efeaee;
+}
+
+.modal-content3 {
+    display: none;
+    /*border-radius: 10px 10px 10px 10px;*/
+    /*display:none;*/
+    opacity: 10;
+    width: 340px;
+    margin-top: 30px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    padding: 2em;
+    pointer-events: all;
+    overflow: auto;
+    /*opacity: 0.5;*/
+    font-family: Monaco, monospace;
+    background-color: #efeaee;
+}
+/*.modal-content3:active{*/
+/*    display:block;*/
+/*}*/
+.modal-content3 img{
+
+    width: 330px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.goods-img {
+    width: 330px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.modal-content3 p1
+{
+    /*background-color: #eee; !* Change the background color on hover *!*/
+   font-size: 25px;
+    font-weight: bolder;
+    font-family: "Arial Black";
+
+    color: #333; /* Change the text color on hover */
+    /*transform: scale(3); !* Apply a slight scale effect on hover *!*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.modal-content3 p
+{
+    font-size: 10px;
+    text-align: left; /* Align the text to the right */
+
+    font-weight: bold; /* Set the font weight to bold */
+    text-shadow: 1px 1px 1px #ddd; /* Add a subtle text shadow */
+
+
+    /*border: 1px solid #ddd; !* Add a border with a color of #ddd and a width of 1px *!*/
+    border-radius: 4px; /* Add a border radius of 4px for rounded corners */
+    /*transition: all 0.3s ease; !* Add a smooth transition effect for hover sta*/
+    /*background-color: #eee; !* Change the background color on hover *!*/
+    /*font-size: 25px;*/
+
+    color: #333; /* Change the text color on hover */
+    /*transform: scale(3); !* Apply a slight scale effect on hover *!*/
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); !* Add a subtle box shadow on hover *!*/
+    /*transition: transform 0.3s ease-in-out;*/
+    margin-bottom: 10px;
+}
+
+
+.modal-content3 close{
+
+}
+
+
+
+.modal-content1 {
+
+    /*border-radius: 10px 10px 10px 10px;*/
+    /*opacity: 10;*/
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 4px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 2em;
+    pointer-events: all;
+    overflow: auto;
+    /*opacity: 0.5;*/
+    font-family: Monaco, monospace;
+    background-color: #efeaee;
+}
+
+.modal-content1 img {
+    height: 110px;
+    width: 200px;
+}
+
+.modal-content1 h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Arial", monospace;
+}
+
+
+.modal-content input {
+    font-weight: bold;
+    /*left: 10px;*/
+    position: relative;
+    /*top:8px;*/
+    left: 10%;
+    width: 130px;
+    height: 20px;
+    border-color: #e8addb;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #f7f2f7;
+    /*background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);*/
+}
+
+.modal-content button {
+    /*position: relative;*/
+    position: relative;
+    top: 8px;
+    margin-right: 200px;
+    /*left: 3%;*/
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-color: #e8addb;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e8addb;
+    background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);
+    /*top:8px;*/
+    /*left: 10%;*/
+    /*width: 90px;*/
+    /*height: 30px;*/
+    /*border-color: #e8addb;*/
+    /*font-weight: bolder;*/
+    /*font-size: 20px;*/
+    /*font-family: Arial;*/
+    /*position: center;*/
+    left: 100px;
+    /*border-radius: 8px 8px 8px 8px;*/
+    /*background-color: #e8addb;*/
+    /*background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);*/
+    z-index: 100;
+
+}
+
+
+.modal-content1 button {
+    /*position: relative;*/
+    position: relative;
+    top: 8px;
+    left: 16%;
+    width: 90px;
+    height: 30px;
+    border-color: #e8addb;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e8addb;
+    background-img: linear-gradient(to left, #f5bbe7, #e7d6ee);
+
+
+}
+
+
+.modal-content h3 {
+    font-size: 30px;
+    /*top: 20px;*/
+    margin-top: 0px;
+    font-weight: bolder;
+    font-family: "Arial", monospace;
+
+}
+
+/* 设置弹窗关闭按钮样式 */
+.modal-content .close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    text-decoration: none;
+    width: 16px;
+}
+
+.modal-content1 .close {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 24px;
+    /*cursor: pointer;*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    text-decoration: none;
+    width: 16px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 24px;
+    /*cursor: pointer;*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    text-decoration: none;
+    width: 16px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* 设置关闭按钮的样式 */
+/*.close {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    height: 16px;*/
+/*    text-decoration: none;*/
+/*    width: 16px;*/
+/*}*/
+
+.no-goods-box {
+    top:300px;
+    left: 300px;
+    /*width: 295px;*/
+    /*height: 400px;*/
+    background-color: #f8f8f8;
+    /*margin-top: px;*/
+    /*margin: 10px;*/
+    margin-left: 90px;
+    margin-top: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    border-color: #b664a4;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*border-: 1px;*/
+}
+/*.modal Tanchuan {*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    border-radius: 10px 10px 10px 10px;*/
+/*}*/
+
+.form-1
+{
+    font-family: Arial, sans-serif;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
