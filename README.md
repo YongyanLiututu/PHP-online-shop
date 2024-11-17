@@ -220,5 +220,5 @@ Add desired products to your cart and view the cart to manage items.
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Relative picture:
-![GitHub Logo] 1.png
+![Example Image](1.png)
 
